@@ -1,0 +1,18 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "version": 2,
+  "framework": "nextjs",
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/.next",
+  "installCommand": "cd frontend && npm install",
+  "devCommand": "cd frontend && npm run dev",
+  "regions": ["hkg1"],
+  "env": {
+    "NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID": "@wallet_connect_project_id",
+    "NEXT_PUBLIC_ARBITRUM_RPC": "@arbitrum_rpc",
+    "NEXT_PUBLIC_OPTIMISM_RPC": "@optimism_rpc",
+    "NEXT_PUBLIC_POLYGON_RPC": "@polygon_rpc",
+    "NEXT_PUBLIC_BSC_RPC": "@bsc_rpc",
+    "NEXT_PUBLIC_API_URL": "@api_url"
+  }
+}
