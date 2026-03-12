@@ -3,20 +3,20 @@
 import Link from 'next/link';
 import { WalletConnect } from '@/components/wallet/WalletConnect';
 import { useAccount } from 'wagmi';
-import {
-  HomeIcon,
-  ChartBarIcon,
-  Cog6ToothIcon,
-  CurrencyDollarIcon,
-  UsersIcon,
-} from '@heroicons/react/24/outline';
+import { 
+  Home, 
+  BarChart3, 
+  Settings, 
+  DollarSign, 
+  Users 
+} from 'lucide-react';
 
 const navigation = [
-  { name: 'Dashboard', href: '/dashboard', icon: HomeIcon },
-  { name: 'Strategies', href: '/strategies', icon: Cog6ToothIcon },
-  { name: 'Portfolio', href: '/portfolio', icon: ChartBarIcon },
-  { name: 'Copy Trading', href: '/copy-trading', icon: UsersIcon },
-  { name: 'Leaderboard', href: '/leaderboard', icon: CurrencyDollarIcon },
+  { name: 'Dashboard', href: '/dashboard', icon: Home },
+  { name: 'Strategies', href: '/strategies', icon: Settings },
+  { name: 'Portfolio', href: '/portfolio', icon: BarChart3 },
+  { name: 'Copy Trading', href: '/copy-trading', icon: Users },
+  { name: 'Leaderboard', href: '/leaderboard', icon: DollarSign },
 ];
 
 export function Header() {
